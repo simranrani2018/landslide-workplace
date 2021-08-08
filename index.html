@@ -1,0 +1,262 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Stunning Workplace</title>
+<style>
+
+/* Resetting CSS */
+*{
+  font-family: 'Roboto', sans-serif;  
+  padding:0;
+  margin:0;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+}
+
+/* Generic Classes */
+.container{
+  width:80%;
+  margin:auto;
+}
+.flex{
+  display:flex;
+}
+.items-center{
+  align-items:center;
+}
+.justify-between{
+  justify-content:space-between;
+}
+.rounded{
+  border-radius:100%;
+}
+.text-center{
+  text-align:center;
+}
+.btn{
+  padding: 20px 35px;
+  text-decoration:none;
+  font-weight:500;
+  border-radius:25px;
+}
+.btn-pink{
+  background:#FFD8DB;
+}
+.text-gray-100{
+  color:#c7c7c7;
+}
+.tag{
+  width:25px;
+ height:12px;
+  border-radius:20px;
+}
+.tag-pink{
+  background:#FED7DA;
+}
+.tag-red{
+  background:#FD6534;
+}
+.tag-green{
+  background:#9ED095;
+}
+.tag-yellow{
+  background:#FFE4A0;
+}
+.text-blue{
+ color:#8071D0;
+}
+.arrow-btn{
+   border:1px #e0e0e0 solid;
+  border-radius:24px; 
+  padding:20px 22px;
+}
+.arrow-btn.disabled{
+  border:1px #f3f3f3 solid;
+  color:#c7c7c7;  
+}
+.font-semibold{
+  font-weight:500;
+}
+.mx-2{
+  margin-left:5px;
+  margin-right:5px;
+}
+.btn-blue{
+  background:#5243C0;
+}
+.text-white{
+  color:white;
+}
+
+.wrapper{
+  width:80%;
+  margin:auto;
+}
+.mt-100{
+  margin-top:100px;
+}
+.leading-2{
+  line-height:1.75rem;
+}
+.text-gray-500{
+  color:#5a5a5a;
+}
+.my-30{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.my-50{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.w-1\/3{
+  width:33.33%;
+}
+.w-2\/3{
+  width:66.66%;
+}
+ul{
+  text-align:center;
+  list-style:none;
+}
+.items-center{
+  align-items:center;
+}
+
+/* Targeting specific Elements */
+h1{
+  font-size:5rem;
+}
+header{
+  width:95%;
+  margin:20px auto 20px auto;
+}
+
+header nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+header ul{
+  width:50%;
+}
+
+ 
+header ul li{
+  display:inline-block;
+  padding:5px;
+  margin:auto 30px;
+  cursor:pointer;
+  border-bottom:2px solid transparent;
+}
+header ul li:hover{
+  border-bottom-color:black;
+}
+
+ul.list li{
+  padding:12px 25px;
+  background:#f9f9f9;
+  border-radius:10px;
+  margin-bottom:10px;
+  cursor:pointer;
+  transition:0.2s all linear;
+}
+ul.list li:hover{
+  background:white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ul.list li .checkbox{
+    border:2px solid #ccc;
+  background:transparent;
+  width:25px;
+  height:25px;
+  transition:0.1s all ease-in;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+}
+ul.list li .checkbox .fas{
+  color:#c7c7c7;
+}
+ul.list li:hover .checkbox .fas{
+  color:white;
+}
+ul.list li:hover .checkbox{
+  background:#5243C0;
+  border:2px solid #5243C0;
+}
+ul.list li .title{
+  font-size:18px;
+  font-weight:500;
+  width:45%;
+  padding-left:20px;
+  text-align:left;
+}
+ul.list li .flex{
+  flex:1;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <nav>
+      <div><img width=200 src="logo.png" /></div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Jobs</li>
+      </ul>
+      <a class="btn btn-pink text-blue" href="#">Your Account</a>
+    </nav>
+  </header>
+  <div class="container flex mt-100">
+    <div class="w-1/3">
+      <h1>Stunning Workplace.</h1>
+      <p class="my-30 leading-2 text-gray-500">With Stunning, remote teams can roganize projects, manage shifing proitories and get work done.</p>
+      <div class="flex my-50">
+        <a href="#" class="mx-2 btn btn-blue text-white">New Account</a>
+        <a href="#" class="mx-2 arrow-btn disabled"><i class="fas fa-arrow-up"></i></a>
+        <a href="#" class="mx-2 arrow-btn "><i class="fas fa-arrow-down"></i></a>
+      </div>
+      <ul class="list my-50">
+          <li class="flex items-center "><div class="checkbox rounded"><i class="fas fa-check"></i></div><span class="title">Dmm design</span>
+            <div class="flex items-center justify-between"><img class="rounded" width=35 height=35 src="user-pink.png" alt="profile-pic" /> <span  class="text-gray-100 font-semibold">20 Dec</span>
+              <div class="tag tag-pink"></div>
+            </div>
+          </li>
+ <li class="flex items-center "><div class="checkbox rounded"><i class="fas fa-check"></i></div><span class="title">Blurr Animation</span>
+            <div class="flex items-center justify-between"><img class="rounded" width=35 height=35 src="user-orange.png" alt="profile-pic" /> <span  class="text-gray-100 font-semibold">22 Dec</span>
+              <div class="tag tag-red"></div>
+            </div>
+          </li>
+         <li class="flex items-center "><div class="checkbox rounded"><i class="fas fa-check"></i></div><span class="title">Illustration</span>
+            <div class="flex items-center justify-between"><img class="rounded" width=35 height=35 src="user-blue.png" /> <span  class="text-gray-100 font-semibold">26 Dec</span>
+              <div class="tag tag-green"></div>
+            </div>
+          </li>
+         <li class="flex items-center "><div class="checkbox rounded"><i class="fas fa-check"></i></div><span class="title">Refunds</span>
+            <div class="flex items-center justify-between"><img class="rounded" width=35 height=35 src="user-red.png" alt="profile-pic" /> <span  class="text-gray-100 font-semibold">28 Dec</span>
+              <div class="tag tag-yellow"></div>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="w-2/3 text-center">
+      <img src="landing-section-image.png" alt="Design">
+    </div>
+  </div>
+</body>
+
+
+</html>
